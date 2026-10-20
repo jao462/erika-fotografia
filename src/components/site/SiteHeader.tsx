@@ -33,7 +33,7 @@ export function SiteHeader() {
               {l.label}
             </Link>
           ))}
-          <Button asChild variant="hero" size="sm" className="px-5">
+          <Button asChild variant="hero" size="sm" className="rounded-full px-5">
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
               Agendar ensaio
             </a>

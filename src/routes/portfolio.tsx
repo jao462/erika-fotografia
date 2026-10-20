@@ -63,11 +63,7 @@ function Portfolio() {
                 {c.photos.map((p, i) => (
                   <figure
                     key={p.src}
-                    className={cn(
-                      "overflow-hidden rounded-2xl shadow-photo",
-                      p.width > p.height && "sm:col-span-2",
-                      i === 0 && p.height > p.width && "sm:row-span-2",
-                    )}
+                    className={cn("overflow-hidden rounded-2xl shadow-photo", i % 2 === 1 && "sm:mt-12")}
                   >
                     <img
                       src={p.src}
@@ -75,7 +71,7 @@ function Portfolio() {
                       width={p.width}
                       height={p.height}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                      className="aspect-[4/5] h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </figure>
                 ))}
