@@ -7,7 +7,7 @@ const ids = categories.map((c) => c.id);
 
 export const Route = createFileRoute("/portfolio")({
   validateSearch: (search: Record<string, unknown>): { categoria?: CategoryId } => {
-    const c = search.categoria;
+    const c = search["categoria"];
     return typeof c === "string" && (ids as string[]).includes(c) ? { categoria: c as CategoryId } : {};
   },
   head: () => ({

@@ -83,4 +83,4 @@ export const quotes = [
   "Fotografar é eternizar o que o coração já sabe de cor.",
   "Os dias passam rápido. As memórias ficam para sempre.",
   "Cada sorriso tem uma história. Eu estou aqui para contá-la.",
-];
+] as const;

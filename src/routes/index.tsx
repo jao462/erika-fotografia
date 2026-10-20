@@ -118,7 +118,7 @@ function Index() {
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c) => {
-            const cover = c.photos.find((p) => p.height > p.width) ?? c.photos[0];
+            const cover = c.photos.find((p) => p.height > p.width) ?? c.photos[0]!;
             return (
               <Link
                 key={c.id}
