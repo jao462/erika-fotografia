@@ -1,5 +1,5 @@
-import heroNewborn from "@/assets/hero-newborn.jpg";
-import newborn2 from "@/assets/newborn-2.jpg";
+import newbornNatal from "@/assets/newborn-natal.jpg.asset.json";
+import newbornOne from "@/assets/newborn-one.jpg.asset.json";
 import feminino1 from "@/assets/feminino-1.jpg";
 import feminino2 from "@/assets/feminino-2.jpg";
 import infantil1 from "@/assets/infantil-1.jpg";
@@ -40,8 +40,8 @@ export const categories: Category[] = [
     description:
       "Ensaios delicados e seguros nos primeiros dias de vida, com todo o cuidado e paciência que o seu bebê merece.",
     photos: [
-      { src: heroNewborn, alt: "Recém-nascida dormindo enrolada em manta lilás", width: 1280, height: 1600 },
-      { src: newborn2, alt: "Bebê dormindo em cestinho com flores brancas", width: 1280, height: 1024 },
+      { src: newbornNatal.url, alt: "Bebê de roupa vermelha e tiara de rena em cenário de Natal", width: 874, height: 566 },
+      { src: newbornOne.url, alt: "Bebê sorrindo em ensaio de primeiro aninho com tema Rei Leão", width: 862, height: 556 },
     ],
   },
   {
