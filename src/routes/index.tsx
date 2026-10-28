@@ -5,7 +5,7 @@ import { ContactCta } from "@/components/site/ContactCta";
 import { QuoteBand } from "@/components/site/QuoteBand";
 import { categories, quotes, WHATSAPP_URL } from "@/lib/site";
 import heroSmash from "@/assets/hero-smash.jpg.asset.json";
-import erika from "@/assets/erika.jpg";
+import erika from "@/assets/erika-real.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -151,7 +151,7 @@ function Index() {
       <section className="bg-gradient-lavender">
         <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 py-24 md:grid-cols-2">
           <div className="photo-frame mx-auto w-full max-w-sm">
-            <img src={erika} alt="Erika, fotógrafa, segurando sua câmera" width={1024} height={1280} loading="lazy" className="aspect-[4/5] w-full object-cover" />
+            <img src={erika.url} alt="Érika Pires, fotógrafa, sorrindo e segurando sua câmera" width={440} height={550} loading="lazy" className="aspect-[4/5] w-full object-cover" />
           </div>
           <div>
             <p className="eyebrow">Sobre a Erika fotógrafa</p>
@@ -159,9 +159,7 @@ function Index() {
               Olá, eu sou a <em className="text-primary">Erika</em>
             </h2>
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              Mãe, apaixonada por gente e por luz natural. Há mais de 12 anos registro histórias de
-              famílias, mulheres e bebês com um olhar sensível e acolhedor. Acredito que toda foto
-              deve carregar um sentimento — e é isso que eu busco em cada clique.
+              Casada e mamãe de um príncipe e uma princesa, natural de Goiânia e morando em Curitiba há 14 anos. Enfermeira por formação, fotógrafa quase por acaso e apaixonada em registrar os melhores momentos. Criativa, extrovertida e detalhista nível hard.
             </p>
             <Button asChild variant="soft" size="xl" className="mt-8">
               <Link to="/sobre">
