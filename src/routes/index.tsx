@@ -75,8 +75,8 @@ function Index() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card px-5 py-4 shadow-elegant">
-              <p className="font-display text-3xl text-primary">+500</p>
-              <p className="text-xs text-muted-foreground">famílias fotografadas</p>
+              <p className="font-display text-3xl text-primary">5x</p>
+              <p className="text-xs text-muted-foreground">premiada internacionalmente</p>
             </div>
           </div>
         </div>
@@ -103,7 +103,9 @@ function Index() {
         </div>
       </section>
 
-      <QuoteBand quote={quotes[0]} />
+      <div aria-hidden className="px-6 py-6">
+        <div className="mx-auto h-0.5 max-w-3xl rounded-full bg-gradient-to-r from-transparent via-primary to-transparent" />
+      </div>
 
       {/* Categories */}
       <section className="mx-auto max-w-6xl px-6 py-24">
@@ -170,7 +172,7 @@ function Index() {
         </div>
       </section>
 
-      <QuoteBand quote={quotes[1]} />
+      <QuoteBand quote={quotes[0]} />
 
       <ContactCta />
     </>
