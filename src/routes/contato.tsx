@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL, WHATSAPP_URL } from "@/lib/site";
-import feminino2 from "@/assets/feminino-2.jpg";
+import feminino2 from "@/assets/feminino-2-real.jpg.asset.json";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
@@ -77,7 +77,7 @@ function Contato() {
           </Button>
         </div>
         <div className="photo-frame mx-auto w-full max-w-md fade-up [animation-delay:150ms]">
-          <img src={feminino2} alt="Ensaio feminino em campo de lavanda" width={1280} height={1024} className="aspect-[4/5] w-full object-cover" />
+          <img src={feminino2.url} alt="Jovem de vestido dourado em ensaio feminino com balões" width={607} height={852} className="aspect-[4/5] w-full object-cover" />
         </div>
       </div>
     </section>
