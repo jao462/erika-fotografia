@@ -4,8 +4,6 @@ import feminino1 from "@/assets/feminino-1-real.jpg.asset.json";
 import feminino2 from "@/assets/feminino-2-real.jpg.asset.json";
 import gestacao1 from "@/assets/gestacao-1-real.jpg.asset.json";
 import gestacao2 from "@/assets/gestacao-2-real.jpg.asset.json";
-import familia1 from "@/assets/familia-1-real.jpg.asset.json";
-import familia2 from "@/assets/familia-2-real.jpg.asset.json";
 
 // Placeholder contact details — replace with Erika's real numbers/handles.
 export const WHATSAPP_NUMBER = "5511999999999";
@@ -15,7 +13,7 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 export const INSTAGRAM_HANDLE = "erikafotografia";
 export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 
-export type CategoryId = "smash-the-cake" | "feminino" | "gestacao" | "familia";
+export type CategoryId = "smash-the-cake" | "feminino" | "gestante";
 
 export type Photo = {
   src: string;
@@ -56,25 +54,14 @@ export const categories: Category[] = [
     ],
   },
   {
-    id: "gestacao",
-    title: "Ensaios de Gestação",
+    id: "gestante",
+    title: "Ensaio Gestante",
     tagline: "A espera mais linda da vida",
     description:
       "Registros delicados dessa fase única, para guardar a lembrança da barriga, da expectativa e de todo o amor que está chegando.",
     photos: [
       { src: gestacao1.url, alt: "Gestante de vestido azul royal com cauda longa em estúdio", width: 593, height: 839 },
       { src: gestacao2.url, alt: "Gestante de vestido azul claro à beira do lago, ao lado de um barco", width: 587, height: 879 },
-    ],
-  },
-  {
-    id: "familia",
-    title: "Em Família",
-    tagline: "O amor que vocês constroem juntos",
-    description:
-      "Abraços, risadas e cumplicidade. Memórias da sua família para guardar e passar de geração em geração.",
-    photos: [
-      { src: familia1.url, alt: "Família de vermelho sorrindo em cenário de Natal com neve", width: 849, height: 585 },
-      { src: familia2.url, alt: "Casal de preto sorrindo um para o outro em deque à beira do lago", width: 629, height: 885 },
     ],
   },
 ];
