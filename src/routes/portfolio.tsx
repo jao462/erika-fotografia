@@ -15,12 +15,12 @@ export const Route = createFileRoute("/portfolio")({
       { title: "Portfólio — Erika Fotografia" },
       {
         name: "description",
-        content: "Veja ensaios newborn, femininos, infantis e em família fotografados pela Erika.",
+        content: "Veja ensaios smash the cake, femininos, de gestação e em família fotografados pela Erika.",
       },
       { property: "og:title", content: "Portfólio — Erika Fotografia" },
       {
         property: "og:description",
-        content: "Newborn, ensaios femininos, infantis e em família: conheça o trabalho da Erika.",
+        content: "Smash the cake, ensaios femininos, de gestação e em família: conheça o trabalho da Erika.",
       },
     ],
   }),

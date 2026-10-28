@@ -1,11 +1,11 @@
-import newbornNatal from "@/assets/newborn-natal.jpg.asset.json";
-import newbornOne from "@/assets/newborn-one.jpg.asset.json";
-import feminino1 from "@/assets/feminino-1.jpg";
-import feminino2 from "@/assets/feminino-2.jpg";
-import infantil1 from "@/assets/infantil-1.jpg";
-import infantil2 from "@/assets/infantil-2.jpg";
-import familia1 from "@/assets/familia-1.jpg";
-import familia2 from "@/assets/familia-2.jpg";
+import smashNatal from "@/assets/newborn-natal.jpg.asset.json";
+import smashOne from "@/assets/newborn-one.jpg.asset.json";
+import feminino1 from "@/assets/feminino-1-real.jpg.asset.json";
+import feminino2 from "@/assets/feminino-2-real.jpg.asset.json";
+import gestacao1 from "@/assets/gestacao-1-real.jpg.asset.json";
+import gestacao2 from "@/assets/gestacao-2-real.jpg.asset.json";
+import familia1 from "@/assets/familia-1-real.jpg.asset.json";
+import familia2 from "@/assets/familia-2-real.jpg.asset.json";
 
 // Placeholder contact details — replace with Erika's real numbers/handles.
 export const WHATSAPP_NUMBER = "5511999999999";
@@ -15,7 +15,7 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 export const INSTAGRAM_HANDLE = "erikafotografia";
 export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 
-export type CategoryId = "newborn" | "feminino" | "infantil" | "familia";
+export type CategoryId = "smash-the-cake" | "feminino" | "gestacao" | "familia";
 
 export type Photo = {
   src: string;
@@ -34,14 +34,14 @@ export type Category = {
 
 export const categories: Category[] = [
   {
-    id: "newborn",
-    title: "Newborn",
-    tagline: "Os primeiros dias, para sempre",
+    id: "smash-the-cake",
+    title: "Smash the Cake",
+    tagline: "O primeiro aninho, do jeitinho dele",
     description:
-      "Ensaios delicados e seguros nos primeiros dias de vida, com todo o cuidado e paciência que o seu bebê merece.",
+      "Bolo, cenário temático e muita diversão para celebrar o primeiro ano de vida do seu bebê com leveza e alegria.",
     photos: [
-      { src: newbornNatal.url, alt: "Bebê de roupa vermelha e tiara de rena em cenário de Natal", width: 874, height: 566 },
-      { src: newbornOne.url, alt: "Bebê sorrindo em ensaio de primeiro aninho com tema Rei Leão", width: 862, height: 556 },
+      { src: smashNatal.url, alt: "Bebê de roupa vermelha e tiara de rena em cenário de Natal", width: 874, height: 566 },
+      { src: smashOne.url, alt: "Bebê sorrindo em ensaio de primeiro aninho com tema Rei Leão", width: 862, height: 556 },
     ],
   },
   {
@@ -51,19 +51,19 @@ export const categories: Category[] = [
     description:
       "Um momento só seu, para se ver com outros olhos e redescobrir a sua beleza, força e autenticidade.",
     photos: [
-      { src: feminino1, alt: "Mulher de vestido branco sorrindo junto à janela", width: 1024, height: 1280 },
-      { src: feminino2, alt: "Mulher de chapéu em campo de lavanda ao pôr do sol", width: 1280, height: 1024 },
+      { src: feminino1.url, alt: "Jovem de vestido preto segurando um bolo, com balões pretos e prateados", width: 598, height: 857 },
+      { src: feminino2.url, alt: "Jovem sorrindo sentada em cadeira de diretor, cercada de balões e globos espelhados", width: 607, height: 852 },
     ],
   },
   {
-    id: "infantil",
-    title: "Ensaios Infantis",
-    tagline: "A infância em sua forma mais pura",
+    id: "gestacao",
+    title: "Ensaios de Gestação",
+    tagline: "A espera mais linda da vida",
     description:
-      "Sorrisos espontâneos, brincadeiras e a personalidade única de cada criança, registrados com leveza.",
+      "Registros delicados dessa fase única, para guardar a lembrança da barriga, da expectativa e de todo o amor que está chegando.",
     photos: [
-      { src: infantil1, alt: "Menina de vestido lilás segurando balões", width: 1024, height: 1280 },
-      { src: infantil2, alt: "Menino lendo livro em cadeira de madeira", width: 1280, height: 1024 },
+      { src: gestacao1.url, alt: "Gestante de vestido azul royal com cauda longa em estúdio", width: 593, height: 839 },
+      { src: gestacao2.url, alt: "Gestante de vestido azul claro à beira do lago, ao lado de um barco", width: 587, height: 879 },
     ],
   },
   {
@@ -73,14 +73,13 @@ export const categories: Category[] = [
     description:
       "Abraços, risadas e cumplicidade. Memórias da sua família para guardar e passar de geração em geração.",
     photos: [
-      { src: familia1, alt: "Família rindo junta em campo de lavanda", width: 1280, height: 1024 },
-      { src: familia2, alt: "Pais beijando o bebê sorridente", width: 1024, height: 1280 },
+      { src: familia1.url, alt: "Família de vermelho sorrindo em cenário de Natal com neve", width: 849, height: 585 },
+      { src: familia2.url, alt: "Casal de preto sorrindo um para o outro em deque à beira do lago", width: 629, height: 885 },
     ],
   },
 ];
 
 export const quotes = [
-  "Fotografar é eternizar o que o coração já sabe de cor.",
   "Os dias passam rápido. As memórias ficam para sempre.",
   "Cada sorriso tem uma história. Eu estou aqui para contá-la.",
 ] as const;

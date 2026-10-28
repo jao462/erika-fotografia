@@ -11,7 +11,7 @@ export const Route = createFileRoute("/sobre")({
       { title: "Sobre a Erika — Erika Fotografia" },
       {
         name: "description",
-        content: "Conheça a Erika, fotógrafa de newborn, ensaios femininos, infantis e em família.",
+        content: "Conheça a Erika, fotógrafa de smash the cake, ensaios femininos, de gestação e em família.",
       },
       { property: "og:title", content: "Sobre a Erika fotógrafa" },
       {
@@ -49,8 +49,8 @@ function Sobre() {
                 apertados. Foi aí que a câmera virou extensão do meu coração.
               </p>
               <p>
-                Hoje, com mais de 12 anos de experiência, dedico meu trabalho a newborns, mulheres,
-                crianças e famílias. Meu estúdio é um espaço acolhedor, pensado para que você se
+                Hoje, com mais de 12 anos de experiência, dedico meu trabalho a bebês, gestantes, mulheres
+                e famílias. Meu estúdio é um espaço acolhedor, pensado para que você se
                 sinta em casa e possa simplesmente viver o momento.
               </p>
               <p>
@@ -73,7 +73,7 @@ function Sobre() {
         </div>
       </section>
 
-      <QuoteBand quote={quotes[2]} />
+      <QuoteBand quote={quotes[1]} />
 
       <section className="mx-auto grid max-w-6xl items-center gap-14 px-6 py-24 md:grid-cols-2">
         <div>
