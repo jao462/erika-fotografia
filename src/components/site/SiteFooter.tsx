@@ -10,7 +10,7 @@ export function SiteFooter() {
           <p className="font-display text-3xl italic text-primary-deep">Erika</p>
           <p className="eyebrow mt-1 text-[0.6rem]">Fotografia</p>
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            Smash the cake, ensaios femininos, de gestação e em família. Memórias feitas com amor.
+            Smash the cake, ensaios femininos e ensaio gestante. Memórias feitas com amor.
           </p>
         </div>
         <div className="flex flex-col gap-2 text-sm">

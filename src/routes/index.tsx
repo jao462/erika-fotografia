@@ -4,22 +4,22 @@ import { Button } from "@/components/ui/button";
 import { ContactCta } from "@/components/site/ContactCta";
 import { QuoteBand } from "@/components/site/QuoteBand";
 import { categories, quotes, WHATSAPP_URL } from "@/lib/site";
-import heroNewborn from "@/assets/hero-newborn.jpg";
+import heroSmash from "@/assets/hero-smash.jpg.asset.json";
 import erika from "@/assets/erika.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Erika Fotografia — Newborn, Feminino, Infantil e Família" },
+      { title: "Erika Fotografia — Smash the Cake, Feminino e Gestante" },
       {
         name: "description",
         content:
-          "Fotografia afetiva de newborn, ensaios femininos, infantis e em família. Eternize os momentos mais especiais com a Erika.",
+          "Fotografia afetiva de smash the cake, ensaios femininos e ensaio gestante. Eternize os momentos mais especiais com a Erika.",
       },
       { property: "og:title", content: "Erika Fotografia — Memórias feitas com amor" },
       {
         property: "og:description",
-        content: "Ensaios newborn, femininos, infantis e em família com sensibilidade e delicadeza.",
+        content: "Smash the cake, ensaios femininos e ensaio gestante com sensibilidade e delicadeza.",
       },
     ],
   }),
@@ -67,10 +67,10 @@ function Index() {
             <div className="absolute -right-6 -top-6 h-full w-full rounded-[999px_999px_1.5rem_1.5rem] border border-lavender-strong" />
             <div className="photo-frame relative">
               <img
-                src={heroNewborn}
-                alt="Recém-nascida dormindo em manta lilás"
-                width={1280}
-                height={1600}
+                src={heroSmash.url}
+                alt="Bebê sorrindo de macacão verde em ensaio smash the cake com tema Rei Leão"
+                width={738}
+                height={559}
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
@@ -118,7 +118,7 @@ function Index() {
             Ver todas as fotos <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => {
             const cover = c.photos.find((p) => p.height > p.width) ?? c.photos[0]!;
             return (

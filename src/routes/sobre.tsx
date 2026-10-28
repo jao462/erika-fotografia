@@ -2,74 +2,47 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContactCta } from "@/components/site/ContactCta";
 import { QuoteBand } from "@/components/site/QuoteBand";
 import { quotes } from "@/lib/site";
-import erika from "@/assets/erika.jpg";
-import familia2 from "@/assets/familia-2.jpg";
+import quemEErika from "@/assets/quem-e-erika.jpg.asset.json";
+import familiaSobre from "@/assets/familia-sobre.jpg.asset.json";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre a Erika — Erika Fotografia" },
+      { title: "Quem é Érika Pires — Erika Fotografia" },
       {
         name: "description",
-        content: "Conheça a Erika, fotógrafa de smash the cake, ensaios femininos, de gestação e em família.",
+        content:
+          "Conheça a Érika Pires, fotógrafa em Curitiba: gestante, smash the cake, retrato feminino, corporativo, eventos e mentoria.",
       },
-      { property: "og:title", content: "Sobre a Erika fotógrafa" },
+      { property: "og:title", content: "Quem é Érika Pires" },
       {
         property: "og:description",
-        content: "Mais de 12 anos registrando histórias com sensibilidade, luz natural e afeto.",
+        content: "Mãe, enfermeira por formação e fotógrafa apaixonada em registrar os melhores momentos.",
       },
     ],
   }),
   component: Sobre,
 });
 
-const stats = [
-  { n: "12+", label: "anos de fotografia" },
-  { n: "500+", label: "famílias atendidas" },
-  { n: "1.200+", label: "ensaios realizados" },
-];
+const aboutAlt =
+  "Quem é Érika Pires. Casada e mamãe de um príncipe e uma princesa. Natural de Goiânia e morando em Curitiba há 14 anos. " +
+  "Enfermeira por formação, fotógrafa quase por acaso e apaixonada em registrar os melhores momentos. " +
+  "Criativa, extrovertida, ligada no 220w e tem pavor de mimimi. Cristã, filha do Rei e apaixonada por pets e música! Detalhista nível hard. " +
+  "Nichos de atuação: gestante, smash the cake, corporativo, retrato feminino, eventos e mentoria fotográfica.";
 
 function Sobre() {
   return (
     <>
-      <section className="bg-gradient-lavender">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 py-20 md:grid-cols-2">
-          <div className="photo-frame mx-auto w-full max-w-md fade-up">
-            <img src={erika} alt="Retrato da fotógrafa Erika" width={1024} height={1280} className="aspect-[4/5] w-full object-cover" />
-          </div>
-          <div className="fade-up [animation-delay:150ms]">
-            <p className="eyebrow">Sobre a Erika fotógrafa</p>
-            <h1 className="mt-4 text-5xl leading-tight text-primary-deep md:text-6xl">
-              Fotografo o que <em className="text-primary">o amor</em> tem de mais bonito
-            </h1>
-            <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
-              <p>
-                Tudo começou quando me tornei mãe. Percebi como os dias passavam rápido e como eu
-                queria guardar cada detalhe — as mãozinhas, os primeiros sorrisos, os abraços
-                apertados. Foi aí que a câmera virou extensão do meu coração.
-              </p>
-              <p>
-                Hoje, com mais de 12 anos de experiência, dedico meu trabalho a bebês, gestantes, mulheres
-                e famílias. Meu estúdio é um espaço acolhedor, pensado para que você se
-                sinta em casa e possa simplesmente viver o momento.
-              </p>
-              <p>
-                Acredito em fotos leves, naturais e cheias de verdade. Fotos que, daqui a muitos
-                anos, ainda vão fazer você sorrir.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <div className="grid gap-6 sm:grid-cols-3">
-          {stats.map((s) => (
-            <div key={s.label} className="rounded-3xl border border-border bg-card p-8 text-center">
-              <p className="font-display text-5xl text-primary">{s.n}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{s.label}</p>
-            </div>
-          ))}
+      <section className="bg-gradient-lavender px-4 py-14 md:py-20">
+        <h1 className="sr-only">Quem é Érika Pires</h1>
+        <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl shadow-photo fade-up">
+          <img
+            src={quemEErika.url}
+            alt={aboutAlt}
+            width={895}
+            height={887}
+            className="h-auto w-full"
+          />
         </div>
       </section>
 
@@ -99,7 +72,14 @@ function Sobre() {
           </ol>
         </div>
         <div className="overflow-hidden rounded-[2rem] shadow-photo">
-          <img src={familia2} alt="Pais beijando o bebê" width={1024} height={1280} loading="lazy" className="aspect-[4/5] w-full object-cover" />
+          <img
+            src={familiaSobre.url}
+            alt="Pai e mãe sorrindo segurando o filho pequeno em cenário verde de Natal"
+            width={608}
+            height={849}
+            loading="lazy"
+            className="aspect-[4/5] w-full object-cover"
+          />
         </div>
       </section>
 
