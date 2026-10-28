@@ -103,8 +103,8 @@ function Index() {
         </div>
       </section>
 
-      <div aria-hidden className="bg-lavender px-6 py-16">
-        <div className="mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-primary to-transparent" />
+      <div aria-hidden className="px-6 py-6">
+        <div className="mx-auto h-0.5 max-w-3xl rounded-full bg-gradient-to-r from-transparent via-primary to-transparent" />
       </div>
 
       {/* Categories */}
