@@ -69,7 +69,7 @@ function Contato() {
           </div>
 
           <p className="mt-8 flex items-center gap-2 text-sm text-muted-foreground">
-            <MapPin className="size-4 text-primary" /> Estúdio em São Paulo · Atendo também a domicílio
+            <MapPin className="size-4 text-primary" /> Estúdio em Curitiba
           </p>
 
           <Button asChild variant="hero" size="xl" className="mt-8">
