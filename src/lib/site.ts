@@ -5,13 +5,12 @@ import feminino2 from "@/assets/feminino-2-real.jpg.asset.json";
 import gestacao1 from "@/assets/gestacao-1-real.jpg.asset.json";
 import gestacao2 from "@/assets/gestacao-2-real.jpg.asset.json";
 
-// Placeholder contact details — replace with Erika's real numbers/handles.
-export const WHATSAPP_NUMBER = "5511999999999";
+export const WHATSAPP_NUMBER = "5541996861173";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Olá Erika! Vi seu site e gostaria de saber mais sobre os ensaios.",
 )}`;
-export const INSTAGRAM_HANDLE = "erikafotografia";
-export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
+export const INSTAGRAM_HANDLE = "erikapiresfotografia";
+export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}/`;
 
 export type CategoryId = "smash-the-cake" | "feminino" | "gestante";
 
